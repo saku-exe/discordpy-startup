@@ -30,21 +30,10 @@ async def on_message(message):
         
         
 ID_CHANNEL_WELCOME =  688709651168100366 # 入室用チャンネルのID(int)
-ID_ROLE_WELCOME = 710392333971095553 #付けたい役職のID(int)
+ID_ROLE_WELCOME =　712224759386996766  #付けたい役職のID(int)
 EMOJI_WELCOME = '🍼' # 対応する絵文字
 
-# 役職を付与する非同期関数を定義
-async def grant_role(payload):
-    # 絵文字が異なる場合は処理を打ち切る
-    if payload.emoji.name != EMOJI_WELCOME: 
-        return
 
-    # チャンネルが異なる場合は処理を打ち切る
-    channel = client.get_channel(payload.channel_id)
-    if channel.id != ID_CHANNEL_README:
-        return
-
-    # Member オブジェクトと Role オブジェクトを取得して役職を付与
 
 
 # リアクション追加時に実行されるイベントハンドラを定義
