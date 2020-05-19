@@ -29,8 +29,8 @@ async def on_message(message):
             await message.channel.send('何様のつもり？')
             
             # ########################################################################
-ID_CHANNEL_WELCOME =710392333971095553  # 入室用チャンネルのID(int)
-ID_ROLE_WELCOME =  710392333971095553# 付けたい役職のID(int)
+ID_CHANNEL_WELCOME =  688709651168100366 # 入室用チャンネルのID(int)
+ID_ROLE_WELCOME = 710392333971095553 #付けたい役職のID(int)
 EMOJI_WELCOME = ':baby_bottle:' # 対応する絵文字
 
 # 役職を付与する非同期関数を定義
@@ -56,6 +56,6 @@ async def on_raw_reaction_add(payload):
     # 役職を付与する非同期関数を実行して Optional[Member] オブジェクトを取得
     member = await grant_role(payload)
     if member is not None: # 役職を付与したメンバーがいる時
-        text = f'{member.mention} ようこそ！'
+        text = f'{member.mention} つけたよ～'
         await message.channel.send(text)
             
