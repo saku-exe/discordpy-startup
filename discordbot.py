@@ -18,7 +18,6 @@ async def toa(ctx):
     await ctx.send('なに～なんか用？')
 
 
-bot.run(token)
 
 async def on_message(message):
     if message.content == '/cleanup':
@@ -44,4 +43,6 @@ async def on_raw_reaction_add(payload):
     if member is not None: # 役職を付与したメンバーがいる時
         text = f'{member.mention} つけたよ～'
         await message.channel.send(text)
+        
+        bot.run(token)
             
