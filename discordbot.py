@@ -19,7 +19,7 @@ async def toa(ctx):
 
 
 bot.run(token)
-##########################################################################################
+
 async def on_message(message):
     if message.content == '/cleanup':
         if message.author.guild_permissions.administrator:
@@ -28,7 +28,7 @@ async def on_message(message):
         else:
             await message.channel.send('何様のつもり？')
         
-        ########################################################################
+        
 ID_CHANNEL_WELCOME =  688709651168100366 # 入室用チャンネルのID(int)
 ID_ROLE_WELCOME = 710392333971095553 #付けたい役職のID(int)
 EMOJI_WELCOME = '🍼' # 対応する絵文字
