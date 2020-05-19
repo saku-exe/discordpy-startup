@@ -21,17 +21,17 @@ async def toa(ctx):
 bot.run(token)
 ##########################################################################################
 async def on_message(message):
-    if message.content == '/clienup':
+    if message.content == '/cleanup':
         if message.author.guild_permissions.administrator:
             await message.channel.purge()
             await message.channel.send('はいはいわかりましたよ～')
         else:
             await message.channel.send('何様のつもり？')
-            
-            # ########################################################################
+        
+        ########################################################################
 ID_CHANNEL_WELCOME =  688709651168100366 # 入室用チャンネルのID(int)
 ID_ROLE_WELCOME = 710392333971095553 #付けたい役職のID(int)
-EMOJI_WELCOME = ':baby_bottle:' # 対応する絵文字
+EMOJI_WELCOME = '🍼' # 対応する絵文字
 
 # 役職を付与する非同期関数を定義
 async def grant_role(payload):
