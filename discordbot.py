@@ -21,7 +21,7 @@ async def toa(ctx):
 bot.run(token)
 ##########################################################################################
 async def on_message(message):
-    if message.content == '/shoukyo':
+    if message.content == '/clienup':
         if message.author.guild_permissions.administrator:
             await message.channel.purge()
             await message.channel.send('はいはいわかりましたよ～')
