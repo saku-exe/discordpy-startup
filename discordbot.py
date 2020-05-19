@@ -45,10 +45,7 @@ async def grant_role(payload):
         return
 
     # Member オブジェクトと Role オブジェクトを取得して役職を付与
-    member = channel.guild.get_member(payload.user_id)
-    role = guild.get_role(ID_ROLE_WELCOME)
-    await member.add_roles(role)
-    return member
+
 
 # リアクション追加時に実行されるイベントハンドラを定義
 @client.event
