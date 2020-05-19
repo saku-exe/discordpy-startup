@@ -17,7 +17,7 @@ async def on_command_error(ctx, error):
 async def toa(ctx):
     await ctx.send('なに～なんか用？')
 
-
+        bot.run(token)
 
 async def on_message(message):
     if message.content == '/cleanup':
