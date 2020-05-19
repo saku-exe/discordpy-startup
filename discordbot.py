@@ -44,5 +44,5 @@ async def on_raw_reaction_add(payload):
         text = f'{member.mention} つけたよ～'
         await message.channel.send(text)
         
-        bot.run(token)
+        
             
